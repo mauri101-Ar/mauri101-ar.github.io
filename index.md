@@ -3,6 +3,9 @@ layout: default
 title: Inicio
 ---
 
-# Título
+# Bienvenido
 
-Aquí empieza el contenido.
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
+
